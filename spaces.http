@@ -1,2 +1,4 @@
-GET https://hewsv6ce1e.execute-api.eu-west-2.amazonaws.com/prod/spaces
+GET https://6oidjespr8.execute-api.eu-west-2.amazonaws.com/prod/spaces
+###
+POST https://6oidjespr8.execute-api.eu-west-2.amazonaws.com/prod/spaces
 ###
