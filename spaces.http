@@ -8,3 +8,11 @@ content-type: application/json
     "location": "London" 
 }
 ###
+
+PUT https://6oidjespr8.execute-api.eu-west-2.amazonaws.com/prod/spaces?id=34345
+content-type: application/json
+
+{
+    "location": "Manchester" 
+}
+###
