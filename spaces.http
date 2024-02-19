@@ -16,3 +16,6 @@ content-type: application/json
     "location": "Manchester" 
 }
 ###
+
+DELETE https://6oidjespr8.execute-api.eu-west-2.amazonaws.com/prod/spaces?id=34345
+###
