@@ -5,7 +5,8 @@ POST https://6oidjespr8.execute-api.eu-west-2.amazonaws.com/prod/spaces
 content-type: application/json
 
 {
-    "location": "London" 
+    "location": "London",d
+    "name": "Home"
 }
 ###
 
