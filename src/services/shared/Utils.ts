@@ -1,4 +1,9 @@
 import { JsonError } from './Validator';
+import { randomUUID } from 'crypto';
+
+export function createRandomId() {
+  return randomUUID();
+}
 
 export function parseJSON(arg: string) {
   try {
