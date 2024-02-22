@@ -2,7 +2,11 @@ import { CfnOutput, Stack, StackProps } from 'aws-cdk-lib';
 import { AttributeType, ITable, Table } from 'aws-cdk-lib/aws-dynamodb';
 import { Construct } from 'constructs';
 import { getSuffixFromStack } from '../Utils';
-import { UserPool, UserPoolClient } from 'aws-cdk-lib/aws-cognito';
+import {
+  CfnUserPoolGroup,
+  UserPool,
+  UserPoolClient,
+} from 'aws-cdk-lib/aws-cognito';
 
 export class AuthStack extends Stack {
   public userPool: UserPool;
@@ -13,6 +17,7 @@ export class AuthStack extends Stack {
 
     this.createUserPool();
     this.createUserPoolClient();
+    this.createAdminsGroup();
   }
 
   private createUserPool() {
@@ -38,6 +43,13 @@ export class AuthStack extends Stack {
     });
     new CfnOutput(this, 'SpaceUserPoolClientId', {
       value: this.userPoolClient.userPoolClientId,
+    });
+  }
+
+  private createAdminsGroup() {
+    new CfnUserPoolGroup(this, 'SpaceAdmins', {
+      userPoolId: this.userPool.userPoolId,
+      groupName: 'admins',
     });
   }
 }
