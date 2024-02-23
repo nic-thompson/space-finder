@@ -1,0 +1,18 @@
+{
+  "DataStack": {
+    "ExportsOutputRefSpacesTable8A9973559FB4B87D": "SpaceStack-0206bbe135bd",
+    "ExportsOutputFnGetAttSpacesTable8A997355Arn242927FE": "arn:aws:dynamodb:eu-west-2:757797747573:table/SpaceStack-0206bbe135bd"
+  },
+  "AuthStack": {
+    "ExportsOutputFnGetAttSpaceUserPool6AB542DCArnC2E21F85": "arn:aws:cognito-idp:eu-west-2:757797747573:userpool/eu-west-2_DGZNO0od8",
+    "SpaceUserPoolId": "eu-west-2_DGZNO0od8",
+    "SpaceUserPoolClientId": "1ah42dnj7j0ii1iadsh6sat1v1",
+    "SpaceIdentityPoolId": "eu-west-2:de58c2c8-0f6f-4e44-b01d-ed57a1b3bc5a"
+  },
+  "LambdaStack": {
+    "ExportsOutputFnGetAttSpacesLambdaA5F923A4ArnE59FF2BB": "arn:aws:lambda:eu-west-2:757797747573:function:LambdaStack-SpacesLambdaA5F923A4-sbJz5bGs9gew"
+  },
+  "ApiStack": {
+    "SpacesApiEndpoint36C4F3B6": "https://6oidjespr8.execute-api.eu-west-2.amazonaws.com/prod/"
+  }
+}
