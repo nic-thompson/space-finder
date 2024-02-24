@@ -9,6 +9,9 @@
     "SpaceUserPoolClientId": "1ah42dnj7j0ii1iadsh6sat1v1",
     "SpaceIdentityPoolId": "eu-west-2:de58c2c8-0f6f-4e44-b01d-ed57a1b3bc5a"
   },
+  "UiDeploymentStack": {
+    "SpaceFinderUrl": "d1exhi5e0bbjjo.cloudfront.net"
+  },
   "LambdaStack": {
     "ExportsOutputFnGetAttSpacesLambdaA5F923A4ArnE59FF2BB": "arn:aws:lambda:eu-west-2:757797747573:function:LambdaStack-SpacesLambdaA5F923A4-sbJz5bGs9gew"
   },
